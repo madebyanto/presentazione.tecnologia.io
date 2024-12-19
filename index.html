@@ -41,6 +41,29 @@
             line-height: 1.6; /* Interlinea per una migliore leggibilità */
             margin-bottom: 0;
         }
+
+          button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 5px 10px rgba(0, 0, 255, 0.5);
+        }
+
+        button:active {
+            transform: scale(0.5); 
+        }
+
+        iframe {
+            border-radius: 25px;
+        }
     </style>
 
   
@@ -48,12 +71,17 @@
 <body>
 
     <div class="widget">
-        <img src="https://github.com/madebyanto/presentazione.tecnologia.io/blob/main/djijxj.png" alt="">
+        <img src="djijxj.png" alt="">
         <div>
             <h2>Presentazione tecnologia</h2>
             <p>Questa presentazione non è stata fatta in Canva, Word... ma con linguaggio di programmazione; HTML e CSS (sì ho programmato tutto io)</p>
+            <button onclick="pagina1Funzione()">Inizia la presentazione</button>
         </div>
     </div>
-
+<script>
+    function pagina1Funzione() {
+  window.location.href = "pagina1.html";
+}
+</script>
 </body>
 </html>
