@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 2</title>
+    <style>
+        body {
+            background-color: #001a6b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .widget {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .wheel-container {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 20px auto;
+        }
+
+        .wheel {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 4px solid #333;
+            position: absolute;
+            animation: spin 5s linear forwards; /* Animazione */
+        }
+
+        .wheel-item {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            transform-origin: 0 100%; /* Importantissimo per la rotazione */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wheel-item img {
+            max-width: 40px;
+            max-height: 40px;
+        }
+
+        /* Posizionamento degli elementi sulla ruota */
+        .wheel-item:nth-child(1) { transform: rotate(0deg); top: 0; left: 50%; }
+        .wheel-item:nth-child(2) { transform: rotate(60deg); top: 25%; left: 86.6%;}
+        .wheel-item:nth-child(3) { transform: rotate(120deg); top: 75%; left: 86.6%;}
+        .wheel-item:nth-child(4) { transform: rotate(180deg); bottom: 0; left: 50%; }
+        .wheel-item:nth-child(5) { transform: rotate(240deg); top: 75%; left: 13.4%;}
+        .wheel-item:nth-child(6) { transform: rotate(300deg); top: 25%; left: 13.4%;}
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .button {
+            display: none; /* Inizialmente nascosto */
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .wheel.finished + .button{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="widget">
+        <h2>Ruota degli oggetti di metallo</h2>
+        <div class="wheel-container">
+            <div class="wheel">
+                <div class="wheel-item"><img src="forbici.png" alt="Forbici"></div>
+                <div class="wheel-item"><img src="forchetta.png" alt="Forchetta"></div>
+                <div class="wheel-item"><img src="caffettiera.png" alt="Caffettiera"></div>
+                <div class="wheel-item"><img src="cucchiaio.png" alt="Cucchiaio"></div>
+                <div class="wheel-item"><img src="pentola.png" alt="Pentola"></div>
+                <div class="wheel-item"><img src="coltello.png" alt="Coltello"></div>
+            </div>
+        </div>
+        <button class="button">Continua</button>
+    </div>
+        <script>
+            const wheel = document.querySelector('.wheel');
+            wheel.addEventListener('animationend', () => {
+                wheel.classList.add('finished')
+            });
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+...7
