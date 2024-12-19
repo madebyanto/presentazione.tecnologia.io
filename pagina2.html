@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagine 3</title>
+    <title>Pagine 2</title>
     <style>
         body {
             background-color: #001a6b; /* Sfondo blu scuro per la pagina */
@@ -20,7 +20,7 @@
             border-radius: 8px; /* Bordi arrotondati */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leggera ombra */
             padding: 20px; /* Spazio interno */
-            width: 400px; /* Larghezza del widget */
+            width: 800px; /* Larghezza del widget */
             display: flex; /* Utilizza flexbox per l'immagine e il testo */
             align-items: center; /* Allinea verticalmente immagine e testo */
         }
@@ -41,6 +41,30 @@
             line-height: 1.6; /* Interlinea per una migliore leggibilità */
             margin-bottom: 0;
         }
+
+ button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 5px 10px rgba(0, 0, 255, 0.5);
+        }
+
+        button:active {
+            transform: scale(0.5); 
+        }
+
+        iframe {
+            border-radius: 25px;
+        }
+        
     </style>
 </head>
 <body>
@@ -61,8 +85,14 @@
                 ---<br>
             - Ottone: Meno comune per le forchette rispetto ad altri metalli, l'ottone è una lega di rame e zinco.<br>
               Può essere utilizzato per forchette decorative o vintage, ma tende a ossidarsi e può alterare il sapore di alcuni cibi.</p>
+            <button onclick="avantiFunzione()">Avanti</button>
+            
         </div>
     </div>
-
+<script>
+function avantiFunzione() {
+  window.location.href = "pagina3.html";
+}
+</script>
 </body>
 </html>
