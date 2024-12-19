@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget di esempio</title>
+    <style>
+        body {
+            background-color: #001a6b; /* Sfondo blu scuro per la pagina */
+            font-family: sans-serif; /* Font di base */
+            display: flex;
+            justify-content: center; /* Centra orizzontalmente il widget */
+            align-items: center; /* Centra verticalmente il widget */
+            min-height: 100vh; /* Assicura che il body occupi tutta l'altezza della viewport */
+            margin: 0; /* Rimuove i margini predefiniti del body */
+        }
+
+        .widget {
+            background-color: white; /* Sfondo bianco per il widget */
+            border-radius: 8px; /* Bordi arrotondati */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leggera ombra */
+            padding: 20px; /* Spazio interno */
+            width: 800px; /* Larghezza del widget */
+            display: flex; /* Utilizza flexbox per l'immagine e il testo */
+            align-items: center; /* Allinea verticalmente immagine e testo */
+        }
+
+        .widget h2 {
+            margin-top: 0; /* Rimuove il margine superiore predefinito dell'h2 */
+            color: #333; /* Colore del titolo */
+        }
+
+        .widget p {
+            color: #555; /* Colore del testo */
+            line-height: 1.6; /* Interlinea per una migliore leggibilità */
+            margin-bottom: 0;
+        }
+
+button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 5px 10px rgba(0, 0, 255, 0.5);
+        }
+
+        button:active {
+            transform: scale(0.5); 
+        }
+
+        iframe {
+            border-radius: 25px;
+        }
+      
+    </style>
+</head>
+<body>
+
+    <div class="widget">
+        <div>
+            <h2>La sua storia</h2>
+            <p>La forchetta, antenata dello spiedo, compare già in epoca romana, ma si diffonde come posata individuale nell'Impero Bizantino intorno al IV (quarto) secolo d.C., per poi arrivare in Italia nel XIV (quattordicesimo) secolo.<br>
+              Inizialmente osteggiata, la sua forma moderna a quattro rebbi si sviluppa nel XVIII (diciottesimo) secolo, diventando comune nel XIX (diciannonesimo).</p>
+          <button onclick="avantiFunzione()">Avanti</button>
+        </div>
+    </div>
+<script>
+function avantiFunzione() {
+  window.location.href = "pagina4.html";
+}
+  </script>
+</body>
+</html>
