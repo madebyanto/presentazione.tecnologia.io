@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 1</title>
+    <style>
+        body {
+            background-color: #001a6b; /* Sfondo blu scuro per la pagina */
+            font-family: sans-serif; /* Font di base */
+            display: flex;
+            justify-content: center; /* Centra orizzontalmente il widget */
+            align-items: center; /* Centra verticalmente il widget */
+            min-height: 100vh; /* Assicura che il body occupi tutta l'altezza della viewport */
+            margin: 0; /* Rimuove i margini predefiniti del body */
+        }
 
+        .widget {
+            background-color: white; /* Sfondo bianco per il widget */
+            border-radius: 8px; /* Bordi arrotondati */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leggera ombra */
+            padding: 20px; /* Spazio interno */
+            width: 400px; /* Larghezza del widget */
+            display: flex; /* Utilizza flexbox per l'immagine e il testo */
+            align-items: center; /* Allinea verticalmente immagine e testo */
+        }
+
+        .widget img {
+            max-width: 100px; /* Larghezza massima dell'immagine */
+            height: auto; /* Mantiene le proporzioni dell'immagine */
+            margin-right: 20px; /* Spazio tra l'immagine e il testo */
+        }
+
+        .widget h2 {
+            margin-top: 0; /* Rimuove il margine superiore predefinito dell'h2 */
+            color: #333; /* Colore del titolo */
+        }
+
+        .widget p {
+            color: #555; /* Colore del testo */
+            line-height: 1.6; /* Interlinea per una migliore leggibilità */
+            margin-bottom: 0;
+        }
+
+          button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 5px 10px rgba(0, 0, 255, 0.5);
+        }
+
+        button:active {
+            transform: scale(0.5); 
+        }
+
+        iframe {
+            border-radius: 25px;
+        }
+    </style>
+
+  
+</head>
+<body>
+
+    <div class="widget">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fjumping-cat-gifs&psig=AOvVaw2IA4EazjH-3Q7rq690cmG4&ust=1734721745341000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPDurZ3EtIoDFQAAAAAdAAAAABAE" alt="">
+        <div>
+            <h2>Fine!</h2>
+            <p>Spero che questa presentazione vi sia piaciuta!... ci ho messo 3 ore XD</p>
+        </div>
+</body>
+</html>
